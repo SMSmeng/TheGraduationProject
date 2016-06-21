@@ -32,9 +32,16 @@
 		0F39F9601D129F8200C209DF /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F39F9521D129F8200C209DF /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		0F39F9611D129F8200C209DF /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F39F9541D129F8200C209DF /* View+MASAdditions.m */; };
 		0F39F9621D129F8200C209DF /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F39F9571D129F8200C209DF /* ViewController+MASAdditions.m */; };
+		0F39F9B31D13E83A00C209DF /* SMSScrolView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F39F9B21D13E83A00C209DF /* SMSScrolView.m */; };
+		0F39F9B61D13F2A500C209DF /* SMSBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F39F9B51D13F2A500C209DF /* SMSBtn.m */; };
+		0F39F9B91D14DA2800C209DF /* SMSTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F39F9B81D14DA2800C209DF /* SMSTableViewController.m */; };
+		0F39F9BB1D1781FD00C209DF /* woDe.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F39F9BA1D1781FD00C209DF /* woDe.plist */; };
+		0F39FA781D19753500C209DF /* RegisteredViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F39FA771D19753500C209DF /* RegisteredViewController.m */; };
+		C6614353A7B03010B15DD6AE /* libPods-毕业项目.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D278C3C6DE713AF5C8C7E8E6 /* libPods-毕业项目.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C0461DA118E58D7DF8A0460 /* Pods-毕业项目.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-毕业项目.debug.xcconfig"; path = "Pods/Target Support Files/Pods-毕业项目/Pods-毕业项目.debug.xcconfig"; sourceTree = "<group>"; };
 		0F39F5F61D113C7700C209DF /* 毕业项目.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "毕业项目.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F39F5FA1D113C7700C209DF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0F39F5FC1D113C7700C209DF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -87,6 +94,17 @@
 		0F39F9551D129F8200C209DF /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		0F39F9561D129F8200C209DF /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
 		0F39F9571D129F8200C209DF /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		0F39F9B11D13E83A00C209DF /* SMSScrolView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMSScrolView.h; sourceTree = "<group>"; };
+		0F39F9B21D13E83A00C209DF /* SMSScrolView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMSScrolView.m; sourceTree = "<group>"; };
+		0F39F9B41D13F2A500C209DF /* SMSBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMSBtn.h; sourceTree = "<group>"; };
+		0F39F9B51D13F2A500C209DF /* SMSBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMSBtn.m; sourceTree = "<group>"; };
+		0F39F9B71D14DA2800C209DF /* SMSTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMSTableViewController.h; sourceTree = "<group>"; };
+		0F39F9B81D14DA2800C209DF /* SMSTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMSTableViewController.m; sourceTree = "<group>"; };
+		0F39F9BA1D1781FD00C209DF /* woDe.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = woDe.plist; sourceTree = "<group>"; };
+		0F39FA761D19753500C209DF /* RegisteredViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisteredViewController.h; sourceTree = "<group>"; };
+		0F39FA771D19753500C209DF /* RegisteredViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisteredViewController.m; sourceTree = "<group>"; };
+		D278C3C6DE713AF5C8C7E8E6 /* libPods-毕业项目.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-毕业项目.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEEA405D598D6A5048AD765E /* Pods-毕业项目.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-毕业项目.release.xcconfig"; path = "Pods/Target Support Files/Pods-毕业项目/Pods-毕业项目.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6614353A7B03010B15DD6AE /* libPods-毕业项目.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +124,8 @@
 			children = (
 				0F39F5F81D113C7700C209DF /* 毕业项目 */,
 				0F39F5F71D113C7700C209DF /* Products */,
+				655890C73D614AE06E1FAAEA /* Pods */,
+				393C7E37FD4F17CD195C009C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,7 +145,7 @@
 				0F39F6101D113CFC00C209DF /* 控制器 */,
 				0F39F9B01D13D6C000C209DF /* 视图控制器 */,
 				0F39F9301D127DB900C209DF /* 第三方 */,
-				0F39F9311D12804400C209DF /* 约束练习 */,
+				0F39F9311D12804400C209DF /* 登录界面 */,
 				0F39F5F91D113C7700C209DF /* Supporting Files */,
 			);
 			path = "毕业项目";
@@ -168,6 +189,7 @@
 			children = (
 				0F39F6261D1149C600C209DF /* MyViewController.h */,
 				0F39F6271D1149C600C209DF /* MyViewController.m */,
+				0F39F9BA1D1781FD00C209DF /* woDe.plist */,
 			);
 			name = "我的";
 			sourceTree = "<group>";
@@ -193,6 +215,12 @@
 		0F39F92D1D12527900C209DF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0F39F9B11D13E83A00C209DF /* SMSScrolView.h */,
+				0F39F9B21D13E83A00C209DF /* SMSScrolView.m */,
+				0F39F9B41D13F2A500C209DF /* SMSBtn.h */,
+				0F39F9B51D13F2A500C209DF /* SMSBtn.m */,
+				0F39F9B71D14DA2800C209DF /* SMSTableViewController.h */,
+				0F39F9B81D14DA2800C209DF /* SMSTableViewController.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -205,14 +233,14 @@
 			name = "第三方";
 			sourceTree = "<group>";
 		};
-		0F39F9311D12804400C209DF /* 约束练习 */ = {
+		0F39F9311D12804400C209DF /* 登录界面 */ = {
 			isa = PBXGroup;
 			children = (
+				0F39FA751D1974F900C209DF /* 注册 */,
+				0F39FA741D1974E700C209DF /* 登录 */,
 				0F39F9361D1280C500C209DF /* view */,
-				0F39F9321D12806600C209DF /* SMSViewController.h */,
-				0F39F9331D12806600C209DF /* SMSViewController.m */,
 			);
-			name = "约束练习";
+			name = "登录界面";
 			sourceTree = "<group>";
 		};
 		0F39F9361D1280C500C209DF /* view */ = {
@@ -270,6 +298,41 @@
 			name = "视图控制器";
 			sourceTree = "<group>";
 		};
+		0F39FA741D1974E700C209DF /* 登录 */ = {
+			isa = PBXGroup;
+			children = (
+				0F39F9321D12806600C209DF /* SMSViewController.h */,
+				0F39F9331D12806600C209DF /* SMSViewController.m */,
+			);
+			name = "登录";
+			sourceTree = "<group>";
+		};
+		0F39FA751D1974F900C209DF /* 注册 */ = {
+			isa = PBXGroup;
+			children = (
+				0F39FA761D19753500C209DF /* RegisteredViewController.h */,
+				0F39FA771D19753500C209DF /* RegisteredViewController.m */,
+			);
+			name = "注册";
+			sourceTree = "<group>";
+		};
+		393C7E37FD4F17CD195C009C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D278C3C6DE713AF5C8C7E8E6 /* libPods-毕业项目.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		655890C73D614AE06E1FAAEA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0C0461DA118E58D7DF8A0460 /* Pods-毕业项目.debug.xcconfig */,
+				FEEA405D598D6A5048AD765E /* Pods-毕业项目.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -277,9 +340,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0F39F60D1D113C7700C209DF /* Build configuration list for PBXNativeTarget "毕业项目" */;
 			buildPhases = (
+				D45B645526EF4182A69CF3B6 /* [CP] Check Pods Manifest.lock */,
 				0F39F5F21D113C7600C209DF /* Sources */,
 				0F39F5F31D113C7600C209DF /* Frameworks */,
 				0F39F5F41D113C7600C209DF /* Resources */,
+				3AF9270F15ED42855124BD43 /* [CP] Embed Pods Frameworks */,
+				5E737E41FE7BC9C1191C41A5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -329,6 +395,7 @@
 			files = (
 				0F39F9581D129F8200C209DF /* Info.plist in Resources */,
 				0F39F92F1D1255F200C209DF /* Assets.xcassets in Resources */,
+				0F39F9BB1D1781FD00C209DF /* woDe.plist in Resources */,
 				0F39F6181D11465400C209DF /* TabBarViewController.plist in Resources */,
 				0F39F6091D113C7700C209DF /* LaunchScreen.storyboard in Resources */,
 			);
@@ -336,15 +403,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3AF9270F15ED42855124BD43 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-毕业项目/Pods-毕业项目-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E737E41FE7BC9C1191C41A5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-毕业项目/Pods-毕业项目-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D45B645526EF4182A69CF3B6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0F39F5F21D113C7600C209DF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F39F9B31D13E83A00C209DF /* SMSScrolView.m in Sources */,
 				0F39F6131D11415E00C209DF /* SMSTabBarViewController.m in Sources */,
 				0F39F5FE1D113C7700C209DF /* AppDelegate.m in Sources */,
 				0F39F9341D12806600C209DF /* SMSViewController.m in Sources */,
 				0F39F6281D1149C600C209DF /* MyViewController.m in Sources */,
+				0F39F9B91D14DA2800C209DF /* SMSTableViewController.m in Sources */,
 				0F39F9591D129F8200C209DF /* MASCompositeConstraint.m in Sources */,
 				0F39F6161D11419300C209DF /* SMSNavigationViewController.m in Sources */,
 				0F39F95E1D129F8200C209DF /* MASViewConstraint.m in Sources */,
@@ -360,8 +477,10 @@
 				0F39F93C1D12810C00C209DF /* thirdView.m in Sources */,
 				0F39F95F1D129F8200C209DF /* NSArray+MASAdditions.m in Sources */,
 				0F39F95D1D129F8200C209DF /* MASViewAttribute.m in Sources */,
+				0F39F9B61D13F2A500C209DF /* SMSBtn.m in Sources */,
 				0F39F6251D1149B800C209DF /* ClassFicationViewController.m in Sources */,
 				0F39F95A1D129F8200C209DF /* MASConstraint.m in Sources */,
+				0F39FA781D19753500C209DF /* RegisteredViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,6 +582,7 @@
 		};
 		0F39F60E1D113C7700C209DF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C0461DA118E58D7DF8A0460 /* Pods-毕业项目.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "毕业项目/Info.plist";
@@ -474,6 +594,7 @@
 		};
 		0F39F60F1D113C7700C209DF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEEA405D598D6A5048AD765E /* Pods-毕业项目.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "毕业项目/Info.plist";

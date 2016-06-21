@@ -23,7 +23,7 @@
 
 - (instancetype)initWithFrame:(CGRect)frame{
     if (self = [super initWithFrame:frame]) {
-        self.backgroundColor = [UIColor lightGrayColor];
+        self.backgroundColor = [UIColor whiteColor];
         [self addSubview:self.backLabel];
         [self addSubview:self.lineLabel];
         [self addSubview:self.nameField_1];
@@ -63,7 +63,7 @@
         make.top.equalTo(weakSelf.backLabel.mas_bottom).offset(15);
         make.left.equalTo(weakSelf).offset(16);
         make.right.equalTo(weakSelf).offset(-16);
-        make.height.equalTo(@30);
+        make.height.equalTo(@35);
     }];
     [weakSelf.chuCeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(weakSelf.dengLuBtn.mas_bottom).offset(15);
@@ -79,12 +79,17 @@
     if (!_backLabel) {
         _backLabel = [[UILabel alloc]init];
         _backLabel.backgroundColor = [UIColor whiteColor];
+        _backLabel.layer.masksToBounds = YES;
+        _backLabel.layer.borderColor = [[UIColor yellowColor] CGColor];
+        _backLabel.layer.borderWidth = 0.5f;
     }
     return _backLabel;
 }
 - (UITextField *)nameField_1{
     if (!_nameField_1) {
         _nameField_1 = [[UITextField alloc]init];
+        _nameField_1.placeholder = @"请输入手机号";
+        _nameField_1.keyboardType = UIKeyboardTypeNumberPad;
         _nameField_1.borderStyle = UITextBorderStyleNone;
 //        _nameField_1.backgroundColor = [UIColor redColor];
     }
@@ -93,6 +98,8 @@
 - (UITextField *)passField_2{
     if (!_passField_2) {
         _passField_2 = [[UITextField alloc]init];
+        _passField_2.placeholder = @"请输入密码";
+        _passField_2.secureTextEntry = YES;
 //        _passField_2.backgroundColor = [UIColor greenColor];
         
     }
@@ -101,21 +108,26 @@
 - (UILabel *)lineLabel{
     if (!_lineLabel) {
         _lineLabel = [[UILabel alloc]init];
-        _lineLabel.backgroundColor = [UIColor blackColor];
+        _lineLabel.backgroundColor = [UIColor colorWithRed:230/255.0 green:230/255.0 blue:230/255.0 alpha:1.0];
     }
     return _lineLabel;
 }
 - (UIButton *)dengLuBtn{
     if (!_dengLuBtn) {
         _dengLuBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        _dengLuBtn.backgroundColor = [UIColor blueColor];
+        [_dengLuBtn setImage:[UIImage imageNamed:@"登录界面登录按钮"] forState:UIControlStateNormal];
+//        [_dengLuBtn setTitle:@"登  录" forState:UIControlStateNormal];
+//        [_dengLuBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     }
     return _dengLuBtn;
 }
 - (UIButton *)chuCeBtn{
     if (!_chuCeBtn) {
         _chuCeBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        _chuCeBtn.backgroundColor = [UIColor blueColor];
+//        _chuCeBtn.backgroundColor = [UIColor blueColor];
+        [_chuCeBtn setTitle:@"免费注册" forState:UIControlStateNormal];
+        _chuCeBtn.titleLabel.font = [UIFont systemFontOfSize:14.0];
+        [_chuCeBtn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     }
     return _chuCeBtn;
 }

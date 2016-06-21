@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface thirdView : UIView
-
+@property (strong,nonatomic)        UIButton *qqBtn;
+@property (strong,nonatomic)        UIButton *wxBtn;
+@property (strong,nonatomic)        UIButton *wbBtn;
 @end

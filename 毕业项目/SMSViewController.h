@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+
+
 @interface SMSViewController : UIViewController
+//@property (assign,nonatomic)        id<MyViewControllerDelegate>smsDelegate;
 
 @end

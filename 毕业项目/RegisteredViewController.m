@@ -7,32 +7,44 @@
 //
 
 #import "RegisteredViewController.h"
+#import "chuceView.h"
+#import "thirdView.h"
+#import "VerifiViewController.h"
 
 @interface RegisteredViewController ()
-@property (strong,nonatomic)        UILabel *topLabel;
-@property (strong,nonatomic)        UILabel *backLabel;
-@property (strong,nonatomic)        UITextField *nameTextField;
-@property (strong,nonatomic)        UILabel *lineLabel;
-@property (strong,nonatomic)        UITextField *passTextField;
-@property (strong,nonatomic)        UIButton *toBtn;
-@property (strong,nonatomic)        UIButton *dengLuBtn;
+@property (strong,nonatomic)        chuceView *chuce;
+@property (strong,nonatomic)        thirdView *third;
 @end
 
 @implementation RegisteredViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self.chuce.toBtn addTarget:self action:@selector(pushYanzhengShoujihao) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:self.chuce];
+    [self.view addSubview:self.third];
+    self.view.backgroundColor = [UIColor whiteColor];
+    
 }
-
-
-- (UILabel *)topLabel{
-    if (!_topLabel) {
-        _topLabel = [[UILabel alloc]init];
-//        _topLabel.backgroundColor = [UIColor colorWithRed:24 green:<#(CGFloat)#> blue:<#(CGFloat)#> alpha:<#(CGFloat)#>]
+- (void)pushYanzhengShoujihao{
+    VerifiViewController *verVC = [[VerifiViewController alloc]init];
+    [self.navigationController pushViewController:verVC animated:YES];
+    
+}
+- (chuceView *)chuce{
+    if (!_chuce) {
+        _chuce = [[chuceView alloc]initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.frame), 250)];
     }
-    return _topLabel;
+    return _chuce;
 }
+- (thirdView *)third{
+    if (!_third) {
+        _third = [[thirdView alloc]initWithFrame:CGRectMake(0,250, CGRectGetWidth(self.view.frame), 100)];
+        
+    }
+    return _third;
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

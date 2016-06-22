@@ -11,13 +11,6 @@
 
 @interface inputView ()
 
-@property (strong,nonatomic)        UILabel *backLabel;
-@property (strong,nonatomic)        UILabel *lineLabel;
-@property (strong,nonatomic)        UITextField *nameField_1;
-@property (strong,nonatomic)        UITextField *passField_2;
-@property (strong,nonatomic)        UIButton *dengLuBtn;
-@property (strong,nonatomic)        UIButton *chuCeBtn;
-
 @end
 @implementation inputView
 
@@ -91,7 +84,6 @@
         _nameField_1.placeholder = @"请输入手机号";
         _nameField_1.keyboardType = UIKeyboardTypeNumberPad;
         _nameField_1.borderStyle = UITextBorderStyleNone;
-//        _nameField_1.backgroundColor = [UIColor redColor];
     }
     return _nameField_1;
 }
@@ -100,7 +92,6 @@
         _passField_2 = [[UITextField alloc]init];
         _passField_2.placeholder = @"请输入密码";
         _passField_2.secureTextEntry = YES;
-//        _passField_2.backgroundColor = [UIColor greenColor];
         
     }
     return _passField_2;
@@ -116,8 +107,7 @@
     if (!_dengLuBtn) {
         _dengLuBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         [_dengLuBtn setImage:[UIImage imageNamed:@"登录界面登录按钮"] forState:UIControlStateNormal];
-//        [_dengLuBtn setTitle:@"登  录" forState:UIControlStateNormal];
-//        [_dengLuBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+//        [_dengLuBtn addTarget:self action:@selector(delegeteCreate) forControlEvents:UIControlEventTouchUpInside];
     }
     return _dengLuBtn;
 }
@@ -131,5 +121,15 @@
     }
     return _chuCeBtn;
 }
+//- (void)delegeteCreate{
+//    if ([self respondsToSelector:@selector(PushViewContronllerWithDictionary:)]) {
+//        [[NSUserDefaults standardUserDefaults] objectForKey:@"ISLOGIN"]
+//        self.deleGate PushViewContronllerWithDictionary:<#(NSDictionary *)#>
+//    }
+//    
+//}
+
+
+
 
 @end

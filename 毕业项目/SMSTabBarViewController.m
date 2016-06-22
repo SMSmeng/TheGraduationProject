@@ -31,7 +31,7 @@
         [viewControllerArray addObject:navigationVC];
     }];
     self.viewControllers = viewControllerArray;
-    self.selectedIndex = 1;
+    self.selectedIndex = 3;
     
 }
 

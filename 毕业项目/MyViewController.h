@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface MyViewController : UIViewController
+@property (strong,nonatomic)        UIButton *tuichuLabel;
+@property (strong,nonatomic)        UITableView *tableView;
 
 @end

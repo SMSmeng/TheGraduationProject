@@ -8,15 +8,19 @@
 
 #import "MyViewController.h"
 #import "Masonry.h"
-#import "SMSViewController.h"
+#import "SMSViewController.h"     
+#import "RegisteredViewController.h"
 
 @interface MyViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (strong,nonatomic)        UIImageView *imageBack;
 @property (strong,nonatomic)        UIButton *liefButton;
 @property (strong,nonatomic)        UIButton *rightButton;
-@property (strong,nonatomic)        UITableView *tableView;
 @property (strong,nonatomic)        NSArray *tableViewArray;
 @property (strong,nonatomic)        UILabel *cellLabel;
+@property (strong,nonatomic)        NSDictionary *dicData;
+@property (strong,nonatomic)        UILabel *nameLabel;
+@property (strong,nonatomic)        UILabel *memberLabel;
+@property (strong,nonatomic)        UILabel *headLabel;
 @end
 
 @implementation MyViewController
@@ -27,8 +31,11 @@
     [self.view addSubview:self.imageBack];
     [self.view addSubview:self.liefButton];
     [self.view addSubview:self.rightButton];
-    
+    self.view.backgroundColor = [UIColor colorWithRed:238/255.0 green:239/255.0 blue:244/255.0 alpha:1.0];
+    [self.view addSubview:self.tuichuLabel];
 }
+
+
 - (void)viewDidLayoutSubviews{
     [super viewDidLayoutSubviews];
     __weak typeof(self)     selfWeak = self;
@@ -47,11 +54,22 @@
         make.centerY.equalTo(selfWeak.imageBack);
         make.size.sizeOffset = CGSizeMake(35, 15);
     }];
+    [selfWeak.tuichuLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(selfWeak.tableView.mas_bottom).offset(-50);
+        make.centerX.equalTo(selfWeak.view);
+        make.size.sizeOffset = CGSizeMake(250, 40);
+    }];
 }
 
 
+#pragma mark - tableView协议方法
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return self.tableViewArray.count;
+    NSDictionary *dic = [[NSUserDefaults standardUserDefaults] objectForKey:@"ISLOGIN"];
+    if ([dic objectForKey:@"ISLOGIN"]) {
+        return 6;
+    }else{
+        return 4;
+    }
 }
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 1;
@@ -82,7 +100,7 @@
 }
 - (UITableView *)tableView{
     if (!_tableView) {
-        _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 130, CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame)) style:UITableViewStyleGrouped];
+        _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 130, CGRectGetWidth(self.view.frame), 370) style:UITableViewStyleGrouped];
         _tableView.delegate = self;
         _tableView.dataSource = self;
         _tableView.bounces = NO;
@@ -95,7 +113,12 @@
     }
     return _tableViewArray;
 }
-
+- (NSDictionary *)dicData{
+    if (!_dicData) {
+        _dicData = [[NSUserDefaults standardUserDefaults] objectForKey:@"ISLOGIN"];
+    }
+    return _dicData;
+}
 - (UIImageView *)imageBack{
     if (!_imageBack) {
         _imageBack = [[UIImageView alloc]init];
@@ -120,12 +143,34 @@
     }
     return _cellLabel;
 }
+- (UIButton *)tuichuLabel{
+    if (!_tuichuLabel) {
+        
+        _tuichuLabel = [UIButton buttonWithType:UIButtonTypeSystem];
+        _tuichuLabel.backgroundColor = [UIColor colorWithRed:114/255.0 green:200/255.0 blue:245/255.0 alpha:1.0];
+        [_tuichuLabel setTitle:@"退 出 登 录" forState:UIControlStateNormal];
+        [_tuichuLabel setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        _tuichuLabel.layer.masksToBounds = YES;
+        _tuichuLabel.layer.contentsScale = 0.5f;
+        [_tuichuLabel addTarget:self action:@selector(showTuiChuDengLu) forControlEvents:UIControlEventTouchUpInside];
+//        _tuichuLabel.hidden = YES;
+    }
+    return _tuichuLabel;
+}
+- (void)showTuiChuDengLu{
+    [[NSUserDefaults standardUserDefaults]removeObjectForKey:@"ISLOGIN"];
+    
+//    [self.dicData ]
+    NSLog(@"退出登录————————————————");
+    [self.tableView reloadData];
+    
+}
 - (UIButton *)rightButton{
     if (!_rightButton) {
         _rightButton = [UIButton buttonWithType:UIButtonTypeSystem];
         [_rightButton setTitle:@"注册" forState:UIControlStateNormal];
         [_rightButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        [_rightButton addTarget:self action:@selector(show) forControlEvents:(UIControlEventTouchUpInside)];
+        [_rightButton addTarget:self action:@selector(pushRegisteredViewContrller) forControlEvents:(UIControlEventTouchUpInside)];
     }
     return _rightButton;
 }
@@ -134,11 +179,40 @@
     SMSViewController *smsVC = [[SMSViewController alloc]init];
     smsVC.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:smsVC animated:YES];
+    
+    
+}
+- (void)pushRegisteredViewContrller{
+    RegisteredViewController *regiVC = [[RegisteredViewController alloc]init];
+    regiVC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:regiVC animated:YES];
+}
+- (UILabel *)nameLabel{
+    if (!_nameLabel) {
+        _nameLabel = [[UILabel alloc]initWithFrame:CGRectMake(self.view.frame.size.width/2, 50, 100, 30)];
+        
+    }
+    return _nameLabel;
+}
+- (UILabel *)memberLabel{
+    if (!_memberLabel) {
+        _memberLabel = [[UILabel alloc]initWithFrame:CGRectMake(self.view.frame.size.width/2, 80, 120, 30)];
+        
+    }
+    return _memberLabel;
+}
+- (UILabel *)headLabel{
+    if (!_headLabel) {
+        _headLabel = [[UILabel alloc]initWithFrame:CGRectMake(20, 20, 100, 100)];
+        
+    }
+    return _headLabel;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+    
 }
 
 

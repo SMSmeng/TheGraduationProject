@@ -21,6 +21,8 @@
 @property (strong,nonatomic)        UILabel *nameLabel;
 @property (strong,nonatomic)        UILabel *memberLabel;
 @property (strong,nonatomic)        UILabel *headLabel;
+@property (strong,nonatomic)        UIButton *tuichuLabel;
+@property (strong,nonatomic)        UITableView *tableView;
 @end
 
 @implementation MyViewController
@@ -34,7 +36,13 @@
     self.view.backgroundColor = [UIColor colorWithRed:238/255.0 green:239/255.0 blue:244/255.0 alpha:1.0];
     [self.view addSubview:self.tuichuLabel];
 }
-
+- (void)showLandingAndLoginBtn:(NSDictionary *)dic{
+    if (dic.count != 0) {
+        _tuichuLabel.hidden = NO;
+    }else{
+        _tuichuLabel.hidden = YES;
+    }
+}
 
 - (void)viewDidLayoutSubviews{
     [super viewDidLayoutSubviews];
@@ -65,7 +73,7 @@
 #pragma mark - tableView协议方法
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     NSDictionary *dic = [[NSUserDefaults standardUserDefaults] objectForKey:@"ISLOGIN"];
-    if ([dic objectForKey:@"ISLOGIN"]) {
+    if (dic.count != 0) {
         return 6;
     }else{
         return 4;

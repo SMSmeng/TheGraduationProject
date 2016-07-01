@@ -6,8 +6,8 @@
 //  Copyright © 2016年 北京尚学堂. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-
+//#import <UIKit/UIKit.h>
+#import "SXTBaseViewController.h"
 @interface TimeSaleViewController : UIViewController
 
 @end

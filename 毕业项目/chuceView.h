@@ -8,7 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void(^loginBlock)();//登录block
+typedef void(^landingBlock )(NSDictionary *dic);//注册block
+
 @interface chuceView : UIView
-@property (strong,nonatomic)        UIButton *toBtn;
+@property (copy,nonatomic)        loginBlock loginBlock;
+@property (copy,nonatomic)      landingBlock landingBlock;
 
 @end

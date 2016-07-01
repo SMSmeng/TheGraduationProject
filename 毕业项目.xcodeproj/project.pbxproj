@@ -7,6 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F0907CC1D1CE54C0092C06E /* SXTBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0907CB1D1CE54C0092C06E /* SXTBaseViewController.m */; };
+		0F0907CF1D1D163E0092C06E /* SMSTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0907CE1D1D163E0092C06E /* SMSTableView.m */; };
+		0F0907D31D1D229A0092C06E /* SMSSingleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0907D21D1D229A0092C06E /* SMSSingleTableViewCell.m */; };
+		0F0907D61D1D22B00092C06E /* SMSGreoupTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0907D51D1D22B00092C06E /* SMSGreoupTableViewCell.m */; };
+		0F1351461D1E85F50082AACA /* UIViewController+CategoryFangFa.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F1351451D1E85F50082AACA /* UIViewController+CategoryFangFa.m */; };
+		0F13514A1D1E8F720082AACA /* SMSScrollModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F1351491D1E8F720082AACA /* SMSScrollModel.m */; };
+		0F1351501D1E9F460082AACA /* SMSTableliftModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F13514F1D1E9F460082AACA /* SMSTableliftModel.m */; };
+		0F1351531D1EA4020082AACA /* SMSTableRightModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F1351521D1EA4020082AACA /* SMSTableRightModel.m */; };
+		0F1351571D20BAC30082AACA /* SMSCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F1351561D20BAC30082AACA /* SMSCollectionView.m */; };
+		0F13515B1D20BF650082AACA /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F13515A1D20BF650082AACA /* CollectionViewCell.m */; };
+		0F13515F1D20D05A0082AACA /* SMSCollectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F13515E1D20D05A0082AACA /* SMSCollectionModel.m */; };
+		0F1351631D20FA780082AACA /* UIColor+RandomColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F1351621D20FA780082AACA /* UIColor+RandomColor.m */; };
+		0F1351671D211A340082AACA /* SMSListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F1351661D211A340082AACA /* SMSListViewController.m */; };
+		0F13516A1D21209C0082AACA /* DoubleCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F1351691D21209C0082AACA /* DoubleCollectionViewCell.m */; };
+		0F1351701D2123F00082AACA /* DoubleCollectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F13516F1D2123F00082AACA /* DoubleCollectionModel.m */; };
+		0F1351731D2124510082AACA /* TopCollectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F1351721D2124510082AACA /* TopCollectionModel.m */; };
+		0F1351771D2225F20082AACA /* SMSDetailedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F1351761D2225F20082AACA /* SMSDetailedViewController.m */; };
+		0F13517B1D2257FB0082AACA /* SMSViewTop.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F13517A1D2257FB0082AACA /* SMSViewTop.m */; };
 		0F21E2E71D1A312B00811A0B /* chuceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F21E2E61D1A312B00811A0B /* chuceView.m */; };
 		0F21E2EB1D1A8A6500811A0B /* VerifiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F21E2EA1D1A8A6500811A0B /* VerifiViewController.m */; };
 		0F39F5FB1D113C7700C209DF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F39F5FA1D113C7700C209DF /* main.m */; };
@@ -34,16 +52,53 @@
 		0F39F9601D129F8200C209DF /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F39F9521D129F8200C209DF /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		0F39F9611D129F8200C209DF /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F39F9541D129F8200C209DF /* View+MASAdditions.m */; };
 		0F39F9621D129F8200C209DF /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F39F9571D129F8200C209DF /* ViewController+MASAdditions.m */; };
-		0F39F9B31D13E83A00C209DF /* SMSScrolView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F39F9B21D13E83A00C209DF /* SMSScrolView.m */; };
 		0F39F9B61D13F2A500C209DF /* SMSBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F39F9B51D13F2A500C209DF /* SMSBtn.m */; };
-		0F39F9B91D14DA2800C209DF /* SMSTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F39F9B81D14DA2800C209DF /* SMSTableViewController.m */; };
 		0F39F9BB1D1781FD00C209DF /* woDe.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F39F9BA1D1781FD00C209DF /* woDe.plist */; };
 		0F39FA781D19753500C209DF /* RegisteredViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F39FA771D19753500C209DF /* RegisteredViewController.m */; };
+		0F816A4D1D1BEA2B003B8768 /* verifiView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F816A4C1D1BEA2B003B8768 /* verifiView.m */; };
+		0F936A491D237D6700D82DB8 /* SMSImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F936A481D237D6700D82DB8 /* SMSImageModel.m */; };
+		0F936A4C1D23AF0B00D82DB8 /* SSCcollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F936A4B1D23AF0B00D82DB8 /* SSCcollectionCell.m */; };
 		C6614353A7B03010B15DD6AE /* libPods-毕业项目.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D278C3C6DE713AF5C8C7E8E6 /* libPods-毕业项目.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0C0461DA118E58D7DF8A0460 /* Pods-毕业项目.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-毕业项目.debug.xcconfig"; path = "Pods/Target Support Files/Pods-毕业项目/Pods-毕业项目.debug.xcconfig"; sourceTree = "<group>"; };
+		0F0907CA1D1CE54C0092C06E /* SXTBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXTBaseViewController.h; sourceTree = "<group>"; };
+		0F0907CB1D1CE54C0092C06E /* SXTBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXTBaseViewController.m; sourceTree = "<group>"; };
+		0F0907CD1D1D163E0092C06E /* SMSTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMSTableView.h; sourceTree = "<group>"; };
+		0F0907CE1D1D163E0092C06E /* SMSTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMSTableView.m; sourceTree = "<group>"; };
+		0F0907D11D1D229A0092C06E /* SMSSingleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMSSingleTableViewCell.h; sourceTree = "<group>"; };
+		0F0907D21D1D229A0092C06E /* SMSSingleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMSSingleTableViewCell.m; sourceTree = "<group>"; };
+		0F0907D41D1D22B00092C06E /* SMSGreoupTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMSGreoupTableViewCell.h; sourceTree = "<group>"; };
+		0F0907D51D1D22B00092C06E /* SMSGreoupTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMSGreoupTableViewCell.m; sourceTree = "<group>"; };
+		0F1351441D1E85F50082AACA /* UIViewController+CategoryFangFa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CategoryFangFa.h"; sourceTree = "<group>"; };
+		0F1351451D1E85F50082AACA /* UIViewController+CategoryFangFa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CategoryFangFa.m"; sourceTree = "<group>"; };
+		0F1351481D1E8F720082AACA /* SMSScrollModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMSScrollModel.h; sourceTree = "<group>"; };
+		0F1351491D1E8F720082AACA /* SMSScrollModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMSScrollModel.m; sourceTree = "<group>"; };
+		0F13514E1D1E9F460082AACA /* SMSTableliftModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMSTableliftModel.h; sourceTree = "<group>"; };
+		0F13514F1D1E9F460082AACA /* SMSTableliftModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMSTableliftModel.m; sourceTree = "<group>"; };
+		0F1351511D1EA4020082AACA /* SMSTableRightModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMSTableRightModel.h; sourceTree = "<group>"; };
+		0F1351521D1EA4020082AACA /* SMSTableRightModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMSTableRightModel.m; sourceTree = "<group>"; };
+		0F1351551D20BAC30082AACA /* SMSCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMSCollectionView.h; sourceTree = "<group>"; };
+		0F1351561D20BAC30082AACA /* SMSCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMSCollectionView.m; sourceTree = "<group>"; };
+		0F1351591D20BF650082AACA /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		0F13515A1D20BF650082AACA /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		0F13515D1D20D05A0082AACA /* SMSCollectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMSCollectionModel.h; sourceTree = "<group>"; };
+		0F13515E1D20D05A0082AACA /* SMSCollectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMSCollectionModel.m; sourceTree = "<group>"; };
+		0F1351611D20FA780082AACA /* UIColor+RandomColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+RandomColor.h"; sourceTree = "<group>"; };
+		0F1351621D20FA780082AACA /* UIColor+RandomColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+RandomColor.m"; sourceTree = "<group>"; };
+		0F1351651D211A340082AACA /* SMSListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMSListViewController.h; sourceTree = "<group>"; };
+		0F1351661D211A340082AACA /* SMSListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMSListViewController.m; sourceTree = "<group>"; };
+		0F1351681D21209C0082AACA /* DoubleCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoubleCollectionViewCell.h; sourceTree = "<group>"; };
+		0F1351691D21209C0082AACA /* DoubleCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoubleCollectionViewCell.m; sourceTree = "<group>"; };
+		0F13516E1D2123F00082AACA /* DoubleCollectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoubleCollectionModel.h; sourceTree = "<group>"; };
+		0F13516F1D2123F00082AACA /* DoubleCollectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoubleCollectionModel.m; sourceTree = "<group>"; };
+		0F1351711D2124510082AACA /* TopCollectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopCollectionModel.h; sourceTree = "<group>"; };
+		0F1351721D2124510082AACA /* TopCollectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopCollectionModel.m; sourceTree = "<group>"; };
+		0F1351751D2225F20082AACA /* SMSDetailedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMSDetailedViewController.h; sourceTree = "<group>"; };
+		0F1351761D2225F20082AACA /* SMSDetailedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMSDetailedViewController.m; sourceTree = "<group>"; };
+		0F1351791D2257FB0082AACA /* SMSViewTop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMSViewTop.h; sourceTree = "<group>"; };
+		0F13517A1D2257FB0082AACA /* SMSViewTop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMSViewTop.m; sourceTree = "<group>"; };
 		0F21E2E51D1A312B00811A0B /* chuceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chuceView.h; sourceTree = "<group>"; };
 		0F21E2E61D1A312B00811A0B /* chuceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chuceView.m; sourceTree = "<group>"; };
 		0F21E2E91D1A8A6500811A0B /* VerifiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerifiViewController.h; sourceTree = "<group>"; };
@@ -100,15 +155,17 @@
 		0F39F9551D129F8200C209DF /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		0F39F9561D129F8200C209DF /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
 		0F39F9571D129F8200C209DF /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
-		0F39F9B11D13E83A00C209DF /* SMSScrolView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMSScrolView.h; sourceTree = "<group>"; };
-		0F39F9B21D13E83A00C209DF /* SMSScrolView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMSScrolView.m; sourceTree = "<group>"; };
 		0F39F9B41D13F2A500C209DF /* SMSBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMSBtn.h; sourceTree = "<group>"; };
 		0F39F9B51D13F2A500C209DF /* SMSBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMSBtn.m; sourceTree = "<group>"; };
-		0F39F9B71D14DA2800C209DF /* SMSTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMSTableViewController.h; sourceTree = "<group>"; };
-		0F39F9B81D14DA2800C209DF /* SMSTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMSTableViewController.m; sourceTree = "<group>"; };
 		0F39F9BA1D1781FD00C209DF /* woDe.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = woDe.plist; sourceTree = "<group>"; };
 		0F39FA761D19753500C209DF /* RegisteredViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisteredViewController.h; sourceTree = "<group>"; };
 		0F39FA771D19753500C209DF /* RegisteredViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisteredViewController.m; sourceTree = "<group>"; };
+		0F816A4B1D1BEA2B003B8768 /* verifiView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = verifiView.h; sourceTree = "<group>"; };
+		0F816A4C1D1BEA2B003B8768 /* verifiView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = verifiView.m; sourceTree = "<group>"; };
+		0F936A471D237D6700D82DB8 /* SMSImageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMSImageModel.h; sourceTree = "<group>"; };
+		0F936A481D237D6700D82DB8 /* SMSImageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMSImageModel.m; sourceTree = "<group>"; };
+		0F936A4A1D23AF0B00D82DB8 /* SSCcollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSCcollectionCell.h; sourceTree = "<group>"; };
+		0F936A4B1D23AF0B00D82DB8 /* SSCcollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSCcollectionCell.m; sourceTree = "<group>"; };
 		D278C3C6DE713AF5C8C7E8E6 /* libPods-毕业项目.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-毕业项目.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEEA405D598D6A5048AD765E /* Pods-毕业项目.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-毕业项目.release.xcconfig"; path = "Pods/Target Support Files/Pods-毕业项目/Pods-毕业项目.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -125,11 +182,111 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F0907D01D1D22780092C06E /* tableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				0F0907D11D1D229A0092C06E /* SMSSingleTableViewCell.h */,
+				0F0907D21D1D229A0092C06E /* SMSSingleTableViewCell.m */,
+				0F0907D41D1D22B00092C06E /* SMSGreoupTableViewCell.h */,
+				0F0907D51D1D22B00092C06E /* SMSGreoupTableViewCell.m */,
+			);
+			name = tableViewCell;
+			sourceTree = "<group>";
+		};
+		0F1351471D1E8F0E0082AACA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0F1351481D1E8F720082AACA /* SMSScrollModel.h */,
+				0F1351491D1E8F720082AACA /* SMSScrollModel.m */,
+				0F13514E1D1E9F460082AACA /* SMSTableliftModel.h */,
+				0F13514F1D1E9F460082AACA /* SMSTableliftModel.m */,
+				0F1351511D1EA4020082AACA /* SMSTableRightModel.h */,
+				0F1351521D1EA4020082AACA /* SMSTableRightModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0F1351541D20BA720082AACA /* view */ = {
+			isa = PBXGroup;
+			children = (
+				0F1351551D20BAC30082AACA /* SMSCollectionView.h */,
+				0F1351561D20BAC30082AACA /* SMSCollectionView.m */,
+				0F1351581D20BF4E0082AACA /* collectionCell */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		0F1351581D20BF4E0082AACA /* collectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				0F1351591D20BF650082AACA /* CollectionViewCell.h */,
+				0F13515A1D20BF650082AACA /* CollectionViewCell.m */,
+				0F1351681D21209C0082AACA /* DoubleCollectionViewCell.h */,
+				0F1351691D21209C0082AACA /* DoubleCollectionViewCell.m */,
+				0F936A4A1D23AF0B00D82DB8 /* SSCcollectionCell.h */,
+				0F936A4B1D23AF0B00D82DB8 /* SSCcollectionCell.m */,
+			);
+			name = collectionCell;
+			sourceTree = "<group>";
+		};
+		0F13515C1D20D0240082AACA /* model */ = {
+			isa = PBXGroup;
+			children = (
+				0F13515D1D20D05A0082AACA /* SMSCollectionModel.h */,
+				0F13515E1D20D05A0082AACA /* SMSCollectionModel.m */,
+				0F13516E1D2123F00082AACA /* DoubleCollectionModel.h */,
+				0F13516F1D2123F00082AACA /* DoubleCollectionModel.m */,
+				0F1351711D2124510082AACA /* TopCollectionModel.h */,
+				0F1351721D2124510082AACA /* TopCollectionModel.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		0F1351601D20FA030082AACA /* 工具类 */ = {
+			isa = PBXGroup;
+			children = (
+				0F1351611D20FA780082AACA /* UIColor+RandomColor.h */,
+				0F1351621D20FA780082AACA /* UIColor+RandomColor.m */,
+			);
+			name = "工具类";
+			sourceTree = "<group>";
+		};
+		0F1351641D21195B0082AACA /* 商品列表 */ = {
+			isa = PBXGroup;
+			children = (
+				0F1351651D211A340082AACA /* SMSListViewController.h */,
+				0F1351661D211A340082AACA /* SMSListViewController.m */,
+			);
+			name = "商品列表";
+			sourceTree = "<group>";
+		};
+		0F1351741D2225990082AACA /* 商品详情 */ = {
+			isa = PBXGroup;
+			children = (
+				0F1351751D2225F20082AACA /* SMSDetailedViewController.h */,
+				0F1351761D2225F20082AACA /* SMSDetailedViewController.m */,
+				0F1351781D2257BC0082AACA /* view */,
+				0F936A461D237D3900D82DB8 /* model */,
+			);
+			name = "商品详情";
+			sourceTree = "<group>";
+		};
+		0F1351781D2257BC0082AACA /* view */ = {
+			isa = PBXGroup;
+			children = (
+				0F1351791D2257FB0082AACA /* SMSViewTop.h */,
+				0F13517A1D2257FB0082AACA /* SMSViewTop.m */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
 		0F21E2E81D1A8A1600811A0B /* 验证手机号 */ = {
 			isa = PBXGroup;
 			children = (
 				0F21E2E91D1A8A6500811A0B /* VerifiViewController.h */,
 				0F21E2EA1D1A8A6500811A0B /* VerifiViewController.m */,
+				0F816A4B1D1BEA2B003B8768 /* verifiView.h */,
+				0F816A4C1D1BEA2B003B8768 /* verifiView.m */,
 			);
 			name = "验证手机号";
 			sourceTree = "<group>";
@@ -157,10 +314,14 @@
 			children = (
 				0F39F5FC1D113C7700C209DF /* AppDelegate.h */,
 				0F39F5FD1D113C7700C209DF /* AppDelegate.m */,
+				0F1351441D1E85F50082AACA /* UIViewController+CategoryFangFa.h */,
+				0F1351451D1E85F50082AACA /* UIViewController+CategoryFangFa.m */,
+				0F0907CA1D1CE54C0092C06E /* SXTBaseViewController.h */,
+				0F0907CB1D1CE54C0092C06E /* SXTBaseViewController.m */,
+				0F39F9301D127DB900C209DF /* 第三方 */,
 				0F39F6101D113CFC00C209DF /* 控制器 */,
 				0F39F9B01D13D6C000C209DF /* 视图控制器 */,
-				0F39F9301D127DB900C209DF /* 第三方 */,
-				0F39F9311D12804400C209DF /* 登录界面 */,
+				0F1351601D20FA030082AACA /* 工具类 */,
 				0F39F5F91D113C7700C209DF /* Supporting Files */,
 			);
 			path = "毕业项目";
@@ -192,9 +353,10 @@
 		0F39F6191D1147EB00C209DF /* 限时特卖 */ = {
 			isa = PBXGroup;
 			children = (
-				0F39F92D1D12527900C209DF /* View */,
 				0F39F61D1D1148AF00C209DF /* TimeSaleViewController.h */,
 				0F39F61E1D1148AF00C209DF /* TimeSaleViewController.m */,
+				0F1351471D1E8F0E0082AACA /* Model */,
+				0F39F92D1D12527900C209DF /* View */,
 			);
 			name = "限时特卖";
 			sourceTree = "<group>";
@@ -214,6 +376,8 @@
 			children = (
 				0F39F6231D1149B800C209DF /* ClassFicationViewController.h */,
 				0F39F6241D1149B800C209DF /* ClassFicationViewController.m */,
+				0F1351541D20BA720082AACA /* view */,
+				0F13515C1D20D0240082AACA /* model */,
 			);
 			name = "分类";
 			sourceTree = "<group>";
@@ -230,12 +394,11 @@
 		0F39F92D1D12527900C209DF /* View */ = {
 			isa = PBXGroup;
 			children = (
-				0F39F9B11D13E83A00C209DF /* SMSScrolView.h */,
-				0F39F9B21D13E83A00C209DF /* SMSScrolView.m */,
 				0F39F9B41D13F2A500C209DF /* SMSBtn.h */,
 				0F39F9B51D13F2A500C209DF /* SMSBtn.m */,
-				0F39F9B71D14DA2800C209DF /* SMSTableViewController.h */,
-				0F39F9B81D14DA2800C209DF /* SMSTableViewController.m */,
+				0F0907CD1D1D163E0092C06E /* SMSTableView.h */,
+				0F0907CE1D1D163E0092C06E /* SMSTableView.m */,
+				0F0907D01D1D22780092C06E /* tableViewCell */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -309,9 +472,12 @@
 			isa = PBXGroup;
 			children = (
 				0F39F6191D1147EB00C209DF /* 限时特卖 */,
-				0F39F61C1D11480F00C209DF /* 购物车 */,
 				0F39F61B1D11480600C209DF /* 分类 */,
+				0F39F61C1D11480F00C209DF /* 购物车 */,
 				0F39F61A1D1147FF00C209DF /* 我的 */,
+				0F39F9311D12804400C209DF /* 登录界面 */,
+				0F1351641D21195B0082AACA /* 商品列表 */,
+				0F1351741D2225990082AACA /* 商品详情 */,
 			);
 			name = "视图控制器";
 			sourceTree = "<group>";
@@ -332,6 +498,15 @@
 				0F39FA771D19753500C209DF /* RegisteredViewController.m */,
 			);
 			name = "注册";
+			sourceTree = "<group>";
+		};
+		0F936A461D237D3900D82DB8 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				0F936A471D237D6700D82DB8 /* SMSImageModel.h */,
+				0F936A481D237D6700D82DB8 /* SMSImageModel.m */,
+			);
+			name = model;
 			sourceTree = "<group>";
 		};
 		393C7E37FD4F17CD195C009C /* Frameworks */ = {
@@ -474,33 +649,52 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F39F9B31D13E83A00C209DF /* SMSScrolView.m in Sources */,
+				0F0907D61D1D22B00092C06E /* SMSGreoupTableViewCell.m in Sources */,
 				0F39F6131D11415E00C209DF /* SMSTabBarViewController.m in Sources */,
 				0F39F5FE1D113C7700C209DF /* AppDelegate.m in Sources */,
 				0F39F9341D12806600C209DF /* SMSViewController.m in Sources */,
+				0F1351571D20BAC30082AACA /* SMSCollectionView.m in Sources */,
 				0F39F6281D1149C600C209DF /* MyViewController.m in Sources */,
-				0F39F9B91D14DA2800C209DF /* SMSTableViewController.m in Sources */,
 				0F39F9591D129F8200C209DF /* MASCompositeConstraint.m in Sources */,
+				0F13516A1D21209C0082AACA /* DoubleCollectionViewCell.m in Sources */,
 				0F39F6161D11419300C209DF /* SMSNavigationViewController.m in Sources */,
+				0F936A491D237D6700D82DB8 /* SMSImageModel.m in Sources */,
+				0F13514A1D1E8F720082AACA /* SMSScrollModel.m in Sources */,
 				0F39F95E1D129F8200C209DF /* MASViewConstraint.m in Sources */,
 				0F39F61F1D1148AF00C209DF /* TimeSaleViewController.m in Sources */,
+				0F1351701D2123F00082AACA /* DoubleCollectionModel.m in Sources */,
+				0F1351501D1E9F460082AACA /* SMSTableliftModel.m in Sources */,
+				0F1351531D1EA4020082AACA /* SMSTableRightModel.m in Sources */,
 				0F39F9611D129F8200C209DF /* View+MASAdditions.m in Sources */,
 				0F39F9601D129F8200C209DF /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				0F0907D31D1D229A0092C06E /* SMSSingleTableViewCell.m in Sources */,
+				0F0907CC1D1CE54C0092C06E /* SXTBaseViewController.m in Sources */,
 				0F39F95C1D129F8200C209DF /* MASLayoutConstraint.m in Sources */,
+				0F1351461D1E85F50082AACA /* UIViewController+CategoryFangFa.m in Sources */,
 				0F21E2EB1D1A8A6500811A0B /* VerifiViewController.m in Sources */,
+				0F1351771D2225F20082AACA /* SMSDetailedViewController.m in Sources */,
+				0F13515F1D20D05A0082AACA /* SMSCollectionModel.m in Sources */,
 				0F39F9621D129F8200C209DF /* ViewController+MASAdditions.m in Sources */,
 				0F39F95B1D129F8200C209DF /* MASConstraintMaker.m in Sources */,
 				0F39F6221D1148DC00C209DF /* ShoppingViewController.m in Sources */,
 				0F39F9391D1280FE00C209DF /* inputView.m in Sources */,
+				0F13517B1D2257FB0082AACA /* SMSViewTop.m in Sources */,
 				0F39F5FB1D113C7700C209DF /* main.m in Sources */,
 				0F39F93C1D12810C00C209DF /* thirdView.m in Sources */,
 				0F21E2E71D1A312B00811A0B /* chuceView.m in Sources */,
+				0F1351671D211A340082AACA /* SMSListViewController.m in Sources */,
 				0F39F95F1D129F8200C209DF /* NSArray+MASAdditions.m in Sources */,
+				0F0907CF1D1D163E0092C06E /* SMSTableView.m in Sources */,
 				0F39F95D1D129F8200C209DF /* MASViewAttribute.m in Sources */,
+				0F936A4C1D23AF0B00D82DB8 /* SSCcollectionCell.m in Sources */,
+				0F13515B1D20BF650082AACA /* CollectionViewCell.m in Sources */,
+				0F1351631D20FA780082AACA /* UIColor+RandomColor.m in Sources */,
 				0F39F9B61D13F2A500C209DF /* SMSBtn.m in Sources */,
 				0F39F6251D1149B800C209DF /* ClassFicationViewController.m in Sources */,
 				0F39F95A1D129F8200C209DF /* MASConstraint.m in Sources */,
 				0F39FA781D19753500C209DF /* RegisteredViewController.m in Sources */,
+				0F816A4D1D1BEA2B003B8768 /* verifiView.m in Sources */,
+				0F1351731D2124510082AACA /* TopCollectionModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -605,6 +799,7 @@
 			baseConfigurationReference = 0C0461DA118E58D7DF8A0460 /* Pods-毕业项目.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				INFOPLIST_FILE = "毕业项目/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bjsxt.----";
@@ -617,6 +812,7 @@
 			baseConfigurationReference = FEEA405D598D6A5048AD765E /* Pods-毕业项目.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
 				INFOPLIST_FILE = "毕业项目/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bjsxt.----";

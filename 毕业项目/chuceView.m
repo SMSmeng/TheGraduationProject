@@ -11,6 +11,7 @@
 
 @interface chuceView ()
 @property (strong,nonatomic)        UILabel *topLabel;
+@property (strong,nonatomic)        UIButton *toBtn;
 @property (strong,nonatomic)        UILabel *backLabel;
 @property (strong,nonatomic)        UITextField *nameTextField;
 @property (strong,nonatomic)        UILabel *lineLabel;
@@ -130,8 +131,17 @@
         [_toBtn setTitle:@"下一步" forState:UIControlStateNormal];
         [_toBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         _toBtn.backgroundColor = [UIColor colorWithRed:100/255.0 green:180/255.0 blue:240/255.0 alpha:1.0];
+        [_toBtn addTarget:self action:@selector(pushXiayishitu) forControlEvents:UIControlEventTouchUpInside];
     }
     return _toBtn;
+}
+- (void)pushXiayishitu{
+    if (_landingBlock) {
+        _landingBlock(@{
+                        @"LoginName":self.nameTextField.text,
+                        @"Lpassword":self.passTextField.text
+                        });
+    }
 }
 - (UIButton *)dengLuBtn{
     if (!_dengLuBtn) {
@@ -139,10 +149,15 @@
         [_dengLuBtn setTitle:@"去登录" forState:UIControlStateNormal];
         [_dengLuBtn setTitleColor:[UIColor colorWithRed:100/255.0 green:180/255.0 blue:240/255.0 alpha:1.0] forState:UIControlStateNormal];
         _dengLuBtn.backgroundColor = [UIColor whiteColor];
+        [_dengLuBtn addTarget:self action:@selector(pushDengluViewController) forControlEvents:UIControlEventTouchUpInside];
     }
     return _dengLuBtn;
 }
-
+- (void)pushDengluViewController{
+    if (_loginBlock) {
+        _loginBlock();
+    }
+}
 
 
 

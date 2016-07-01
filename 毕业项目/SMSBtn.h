@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface SMSBtn : UIView
+@property (strong,nonatomic)        UIButton *product;/**新品按钮*/
+@property (strong,nonatomic)        UIButton *brand;/**品牌按钮*/
 
 @end

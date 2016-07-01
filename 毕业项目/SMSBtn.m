@@ -7,12 +7,11 @@
 //
 
 #import "SMSBtn.h"
+#import "Masonry.h"
 
+#define VIEW_WIDTH ([UIScreen mainScreen].bounds.size.width)
 @interface SMSBtn ()
-@property (strong,nonatomic)        UIButton *product;/**新品按钮*/
-@property (strong,nonatomic)        UIButton *brand;/**品牌按钮*/
-//@property (strong,nonatomic)        UITableView *tableView;/**新品视图*/
-//@property (strong,nonatomic)        UICollectionView *collection;/**品牌视图*/
+
 @end
 @implementation SMSBtn
 
@@ -20,46 +19,48 @@
     if (self = [super init]) {
         [self addSubview:self.product];
         [self addSubview:self.brand];
+        self.backgroundColor = [UIColor whiteColor];
     }
     return self;
 }
 - (void)layoutSubviews{
     [super layoutSubviews];
-    self.product.frame = CGRectMake(0, 0, CGRectGetWidth(self.frame), CGRectGetHeight(self.frame));
-    self.brand.frame = CGRectMake(CGRectGetWidth(self.frame)/2, 0, CGRectGetWidth(self.frame), CGRectGetHeight(self.frame));
+    __weak typeof(self)     selfWeak = self;
+    [_product mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.left.equalTo(selfWeak);
+        make.bottom.equalTo(selfWeak);
+        make.width.mas_equalTo(VIEW_WIDTH/2);
+    }];
+    [_brand mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.right.equalTo(selfWeak);
+        make.bottom.equalTo(selfWeak);
+        make.width.mas_equalTo(VIEW_WIDTH/2);
+    }];
+    
+    
 }
-//#pragma mark - tableView 协议方法
-//- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-//    return 8;
-//}
-//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-//    static NSString *xinpin = @"xnpinshitu";
-//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:xinpin];
-//    if (!cell) {
-//        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:xinpin];
-//    }
-//    cell.textLabel.text = @"asdfghjkl";
-//    return cell;
-//}
-//- (UITableView *)tableView{
-//    if (!_tableView) {
-//        _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, , 0, 0) style:UITableViewStylePlain];
-//        _tableView.delegate = self;
-//        _tableView.dataSource = self;
-//    }
-//    return _tableView;
-//}
+
 - (UIButton *)product{
     if (!_product) {
-        _product = [UIButton buttonWithType:UIButtonTypeCustom];
-        _product.backgroundColor = [UIColor yellowColor];
+        _product = [UIButton buttonWithType:UIButtonTypeSystem];
+        [_product setImage:[UIImage imageNamed:@"新品团未选中"] forState:UIControlStateNormal];
+        [_product setImage:[UIImage imageNamed:@"新品团选中"] forState:UIControlStateSelected];
+        [_product setImageEdgeInsets:UIEdgeInsetsMake(0, -40, 0, 0)];
+        [_product setTitle:@"新品团购" forState:UIControlStateNormal];
+        [_product setTitleColor:[UIColor colorWithRed:67/255.0 green:182/255.0 blue:241/255.0 alpha:1.0] forState:UIControlStateNormal];
+        [_product setTitleColor:[UIColor colorWithRed:239/255.0 green:101/255.0 blue:48/255.0 alpha:1.0] forState:UIControlStateSelected];
     }
     return _product;
 }
 - (UIButton *)brand{
     if (!_brand) {
-        _brand = [UIButton buttonWithType:UIButtonTypeCustom];
-        _brand.backgroundColor = [UIColor redColor];
+        _brand = [UIButton buttonWithType:UIButtonTypeSystem];
+        [_brand setImage:[UIImage imageNamed:@"品牌团未选中"] forState:UIControlStateNormal];
+        [_brand setImage:[UIImage imageNamed:@"品牌团选中"] forState:UIControlStateSelected];
+        [_brand setImageEdgeInsets:UIEdgeInsetsMake(0, -40, 0, 0)];
+        [_brand setTitle:@"品牌团购" forState:UIControlStateNormal];
+        [_brand setTitleColor:[UIColor colorWithRed:67/255.0 green:182/255.0 blue:241/255.0 alpha:1.0] forState:UIControlStateNormal];
+        [_brand setTitleColor:[UIColor colorWithRed:230/255.0 green:101/255.0 blue:48/255.0 alpha:1.0] forState:UIControlStateSelected];
     }
     return _brand;
 }

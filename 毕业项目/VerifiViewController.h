@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface VerifiViewController : UIViewController
-
+@property (strong,nonatomic)        NSDictionary *dic;
 @end
